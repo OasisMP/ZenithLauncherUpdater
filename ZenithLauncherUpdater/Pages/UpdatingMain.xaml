@@ -1,0 +1,19 @@
+﻿<Page x:Class="ZenithLauncherUpdater.Pages.UpdatingMain"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:ZenithLauncherUpdater.Pages"
+      mc:Ignorable="d" 
+      xmlns:mp="http://schemas.mpcoding.com/mpcoding/wpf/loadinganimation"
+      d:DesignHeight="450" d:DesignWidth="750"
+      Title="ZenithLauncherUpdater">
+
+    <Grid>
+        <Image Source="pack://application:,,,/Assets/ZenithZ.png" Width="50" Height="50" RenderOptions.BitmapScalingMode="HighQuality" Margin="0,0,0,100"/>
+        <TextBlock Name="UpdateText" Text="STARTING YOUR UPDATE" VerticalAlignment="Center" HorizontalAlignment="Center" Foreground="White" FontFamily="pack://application:,,,/Fonts/#Brutal Type" FontSize="17" FontWeight="Medium" Margin="0,30,0,0" TextWrapping="Wrap"/>
+        <Viewbox Name="LoadDots" Width="35" Height="8" Margin="0,90,0,0" Opacity="1" IsHitTestVisible="False">
+            <mp:ThreeDotsAnimation Color="White" Duration="0:0:0.8"/>
+        </Viewbox>
+    </Grid>
+</Page>
